@@ -5,6 +5,7 @@ import (
 	"os"
 
 	"github.com/gin-gonic/gin"
+	"github.com/gin-contrib/cors"
 )
 
 func main() {
@@ -17,7 +18,7 @@ func main() {
 	router := gin.New()
 
 	// WHAT DOES LOGGER DO HERE!
-	router.use(gin.Logger())
+	router.Use(gin.Logger())
 	// WHEN WHICH API WAS CALLED ->
 	// IN THE TERMINAL ->
 	// FIND OUT ERRORS EXACTLY WHICH API CAUSED THE ERROR!
